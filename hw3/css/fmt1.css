@@ -1,0 +1,42 @@
+/*
+  student: Wesley Nuzzo
+  email: wesley_nuzzo@student.uml.edu
+  class: comp.4610 GUI Programming at UMass Lowell
+  date: October 21, 2017
+    
+  This style is meant to be similar (but not identical) to that of the original
+  document.
+  The two main features to focus on are the color of the headings, and the
+  style of the table's borders.
+ */
+
+body {
+    background-color: aliceblue
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: brown;
+}
+
+/* Special Text (strong, em, u) */
+strong, em {
+    color: brown;
+}
+u {
+    color: green;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+}
+
+table, td, tr {
+    border: 1px solid black;
+}
+
+/* Image */
+img {
+    border: 2px dashed brown;
+}

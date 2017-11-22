@@ -1,0 +1,58 @@
+/*
+  student: Wesley Nuzzo
+  email: wesley_nuzzo@student.uml.edu
+  class: comp.4610 GUI Programming at UMass Lowell
+  date: October 21, 2017
+    
+  This style uses more of a white on black approach.
+  Different headings are given different styles here, including centering h1.
+  Also,the lists are given a left border, which creates a unique effect.
+  For more fun with borders, the image is given padding, a border, and a margin
+  so as to make the effect visible, and the tables borders are allowed to
+  double up, as per the default.
+ */
+
+body {
+    background-color: black
+}
+
+/* Headings and Text */
+
+h1 {
+    text-align: center;
+    background-color: darkslategray;
+    color: white
+}
+h2, h3 {
+    color: red;
+}
+h4 {
+    color: pink
+}
+
+table, ol, ul, p {
+    color: white
+}
+
+/* Special Text (strong, em, u) */
+strong, em, u {
+    color: pink
+}
+
+/* Lists */
+ol, ul {
+     border-left-style: solid;
+     border-left-color: slategray;
+}
+
+/* Table */
+table, td, tr {
+    border: 2px solid white;
+}
+
+/* Image */
+img {
+    padding: 50px;
+    border: solid white;
+    margin: 50px;
+}

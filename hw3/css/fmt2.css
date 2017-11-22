@@ -1,0 +1,42 @@
+/*
+  student: Wesley Nuzzo
+  email: wesley_nuzzo@student.uml.edu
+  class: comp.4610 GUI Programming at UMass Lowell
+  date: October 21, 2017
+    
+  The unique characteristic of this style is the different background of the
+  main text.
+  Also, a border is used to create an "underline" effect for the headings.
+ */
+
+body {
+    background-color: green
+}
+
+/* Headings and Text */
+h1, h2, h3, h4, small{
+    color: white;
+    border-bottom-style: dotted;
+}
+
+p, ol, ul, table {
+    background-color: lightblue
+}
+
+/* Special Text (strong, em, u) */
+u {
+    color: blue
+}
+/* Table */
+table {
+    border-collapse: collapse;
+}
+
+table, td, tr {
+    border: 2px solid black;
+}
+
+/* Image */
+img {
+     margin-left: 50px;
+}
