@@ -1,0 +1,63 @@
+<!--
+    student: Wesley Nuzzo
+    email: wesley_nuzzo@student.uml.edu
+    class: comp.4610 GUI Programming at UMass Lowell
+    date: November 21, 2017
+    
+    This is the HTML for assignment 5.
+    The page contains a form for inputting the necessary data (with variable number
+    of Price and MPG inputs implemented via JQuery), and a table (sized using JQuery)
+    for displaying the results.
+  -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title> Price Comparison App </title>
+
+<!-- JQuery source: http://jquery.com/ -->
+<script src="jquery-3.2.1.js"></script>
+<!-- JQuery Validation plugin source: http://plugins.jquery.com/validation/ -->
+<script src="jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
+
+<script src="app.js"></script>
+
+</head>
+
+<!-- Input Form -->
+
+<form>
+  
+<!-- This is the only way I can think of to make sense of the calculations. -->
+<div>
+  Number of months: <input id="months" name="months" type="number" step="1" min="1">
+  Cost per gallon: $<input id="cpg" name="cpg" type="number" step="0.01" min="0">
+</div>
+
+<!-- Table headers -->
+<div id="prices">
+  <!-- This div will be filled using JQuery -->
+</div>
+<input id="add_price" type="button" value="Add Price">
+<input id="rem_price" type="button" value="Remove Price">
+
+<div id="mpgs">
+  <!-- This div will be filled using JQuery -->
+</div>
+<input id="add_mpg" type="button" value="Add MPG">
+<input id="rem_mpg" type="button" value="Remove MPG">
+</form>
+
+
+<!-- Output Table -->
+
+<table id="results_table">
+  <!-- Will be populated on form submission -->
+</table>
+
+<button id="submit"> Submit </button>
+
+</html>
