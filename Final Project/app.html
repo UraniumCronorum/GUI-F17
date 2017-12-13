@@ -1,0 +1,59 @@
+<!--
+    student: Wesley Nuzzo
+    email: wesley_nuzzo@student.uml.edu
+    class: comp.4610 GUI Programming at UMass Lowell
+    date: December 13, 2017
+    
+    This is an app that allows uploading, downloading and viewing images. 
+  -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title> Final Project </title>
+    <!-- Angularjs: https://angularjs.org/-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <!-- My files-->
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="fmt.css">
+  </head>
+  
+  <body>
+    
+    <div ng-app="app" ng-controller="ctrl">
+      
+      <h1> Current Image </h1>
+      <img src="images/{{current}}"></img>
+
+      <h1> Gallery (click to view image)</h1>
+      <table>
+	<tr ng-repeat="row in imageTable(8)">
+	  <td ng-repeat="img in row">
+	    <p> {{img}} </p>
+	    <img src="images/{{img}}" ng-click="$parent.$parent.current=img" class="thumbnail"></img>
+	    <br>
+	    <a href="images/{{img}}" download="{{img}}"> Download Image </a>    
+	  </td>
+	</tr>
+      </table>
+
+      <h2> Add and Delete Images </h2>
+      <form action="delete.php" method="post" enctype="multipart/form-data">
+	Selet image to delete:
+	<select name="img_del" id="img_del">
+	  <option ng-repeat="image in imageList" value="{{image}}">{{image}}</option>
+	</select>
+	<input type="submit" name="delete" value="delete image">
+      </form>
+
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+	Select image to upload:
+	<input type="file" name="img_up" id="img_up">
+	<input type="submit" value="Upload Image" name="upload">
+      </form>
+
+    </div>
+  </body>
+</html>

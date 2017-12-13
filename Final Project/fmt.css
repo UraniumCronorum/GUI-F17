@@ -1,0 +1,31 @@
+/*
+    student: Wesley Nuzzo
+    email: wesley_nuzzo@student.uml.edu
+    class: comp.4610 GUI Programming at UMass Lowell
+    date: December 13, 2017
+
+    Stylesheet for the final project app.
+ */
+
+body {
+    background-color: #cff;
+}
+
+/* Headings and Text */
+h1, h2, h3, h4, small{
+    
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+}
+
+table, td, tr {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.thumbnail {
+    width: 128px;
+}
